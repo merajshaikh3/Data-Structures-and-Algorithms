@@ -9,7 +9,7 @@ Currently, the repository includes basic implementations of the following data s
 - LinkedLists
 - Stacks
 - Queues
-= HashSet
+- HashSet
 - HashMap
 
 I plan to expand this list as I learn more data structures and algorithms.
