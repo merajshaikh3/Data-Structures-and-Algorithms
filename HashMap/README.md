@@ -38,9 +38,29 @@ This repository contains implementations of Hashmaps using three different metho
 
 ## Time and Space Complexities
 
+
 | Method | Insertion	| Deletion	| Search	| Space Complexity |
 | --- | ---	| ---	| ---	| --- |
 | Chaining	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n + m) |
 | Linear Probing	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n) |
 | Quadratic Probing	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n) |
+
+
+## Advantages and Disadvantages
+
+
+| Method	| Advantages	| Disadvantages |
+| ---	| ---	| --- |
+| Chaining	| Simple to implement, less sensitive to load factor	| Extra memory for linked lists, potentially slower due to pointer chasing |
+| Linear Probing	| Cache-friendly, simple to implement	| Primary clustering can degrade performance, performance deteriorates with higher load factors |
+| Quadratic Probing	| Reduces primary clustering, cache-friendly	| Secondary clustering can occur, more complex to implement than linear probing |
+
+## Usage and Real-World Examples
+
+
+| Method	| Usage	| Real-World Examples |
+| ---	| ---	| --- |
+| Chaining	| Suitable for high load factors and dynamic data structures	| Database indexing |
+| Linear Probing	| Suitable for low load factors to minimize collisions	| Caches |
+| Quadratic Probing	| Useful when table size is a prime number and primary clustering needs to be minimized	| Symbol tables in compilers |
 
