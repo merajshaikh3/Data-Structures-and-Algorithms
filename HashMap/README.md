@@ -22,6 +22,7 @@ This repository contains implementations of Hashmaps using three different metho
 * Compute the hash code of the key and find the corresponding bucket.
 * If the bucket is empty, add the element.
 * If the bucket is occupied, check the next slot (i.e., index + 1) until an empty slot is found.
+
 **Collision Handling:** Collisions are resolved by moving sequentially through the array to find the next available slot.
 
 ### Quadratic Probing
@@ -32,4 +33,14 @@ This repository contains implementations of Hashmaps using three different metho
 * Compute the hash code of the key and find the corresponding bucket.
 * If the bucket is empty, add the element.
 * If the bucket is occupied, use a quadratic function to find the next available slot.
+
 **Collision Handling:** Collisions are resolved by moving through the array using a quadratic function to determine the next slot.
+
+## Time and Space Complexities
+
+| Method | Insertion	| Deletion	| Search	| Space Complexity |
+| --- | ---	| ---	| ---	| --- |
+| Chaining	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n + m) |
+| Linear Probing	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n) |
+| Quadratic Probing	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(1) (avg), O(n) (worst)	| O(n) |
+
