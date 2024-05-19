@@ -33,8 +33,9 @@ Note: These advantages & disadvantages are for the Linked List implementation
 
 ## Use Case	Real-World Examples
 
-| Order Processing Systems	| Managing customer orders in the order they are received |
+| Use Case	| Details |
 | ---	| --- |
+| Order Processing Systems	| Managing customer orders in the order they are received |
 | Scheduling Tasks	| CPU task scheduling, where tasks are executed in the order they arrive |
 | Print Queue Management	| Managing print jobs in a printer queue |
 | Breadth-First Search (BFS) Algorithm	| Exploring nodes level by level in tree/graph traversal |
